@@ -155,8 +155,6 @@ var sessionManager = new Lang.Class({
         if (workset.active) { //switch to it if already active
             Me.workspaceManager.switchToWorkspace(workset.activeWorkspaceIndex);
             this.setFavorites(workset.FavApps);
-
-            uiUtils.showUserFeedbackMessage("Switched to active workset " + workset.WorksetName, true);
         } else {
             //Set up our new workset
             workset.active = true;
